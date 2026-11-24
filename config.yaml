@@ -1,0 +1,20 @@
+
+paths:
+  input_dir: dataset
+  output_dir: cleaned_data
+  log_dir: logs
+  report_dir: reports
+  manifest_file: manifest.json
+
+settings:
+  null_threshold: 0.5
+  remove_duplicates: true
+  output_formats:
+    - csv
+    - json
+
+mappings:
+  order_status:
+    delivered: completed
+    shipped: in_transit
+    canceled: cancelled
