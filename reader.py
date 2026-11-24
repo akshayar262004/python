@@ -1,4 +1,5 @@
 import csv
+
 import pandas as pd
 
 
@@ -15,3 +16,14 @@ def read_csv(path: str) -> list[dict[str, str]]:
         data = list(reader)
 
     return data
+
+
+import json
+
+
+def load_column_mapping(path):
+    """Load column mapping from a JSON file."""
+    with open(path, "r", encoding="utf-8") as file:
+        mapping = json.load(file)
+
+    return mapping

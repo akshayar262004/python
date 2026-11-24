@@ -14,16 +14,13 @@ def standardize_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def apply_column_mapping(
-    df: pd.DataFrame,
-    column_mapping: dict[str, str]
+    df: pd.DataFrame, column_mapping: dict[str, str]
 ) -> pd.DataFrame:
     """Rename columns using a mapping dictionary."""
     return df.rename(columns=column_mapping)
 
 
-def calculate_order_totals(
-    df: pd.DataFrame
-) -> dict[str, float]:
+def calculate_order_totals(df: pd.DataFrame) -> dict[str, float]:
     """Calculate total product price for each order ID."""
     order_totals = {}
 

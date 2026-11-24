@@ -1,0 +1,4 @@
+2026-11-23 14:29:20,339 - INFO - Pipeline execution started
+2026-11-23 14:29:36,308 - INFO - CSV file loaded successfully
+2026-11-23 14:29:36,310 - WARNING - Missing values found
+2026-11-23 14:29:36,313 - ERROR - Sample error message
